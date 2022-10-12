@@ -17,15 +17,15 @@
                                 <td>{{i.id}}</td>
                                 <td>{{i.todo}}</td>
                                 <td>{{i.userId}}</td>
-                                <td *ngIf="i.true">
+                                <td *ngIf="i.completed">
                                     <div class="alert alert-success" role="">
-                                        completed
+                                        true
 
                                     </div>
                                 </td>
-                                <td *ngIf="! i.true">
-                                    <div class="alert alert-success" role="">
-                                         not completed
+                                <td *ngIf="! i.completed">
+                                    <div class="alert alert-danger" role="">
+                                         false
 
                                     </div>
                                 </td>
